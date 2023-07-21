@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+#mainBox{
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    grid-template-rows: 100vh;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+#leftBox{
+    grid-column: 1/4;
+    background-image: url(./pexels-alex-andrews-3805983.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+#rightBox{
+    font-family: cursive;
+    background-color: rgb(212, 212, 212);
+    grid-column: 4/7;
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    grid-template-rows: repeat(5 , 1fr);
+
+}
+#wellcome{
+    grid-column: 3/4;
+    grid-row: -5/-4;
+}
+#texts{
+    grid-column: 3/5;
+    grid-row: -4/-3;
+}
+#stastButton{
+    grid-column: 3/4;
+    grid-row: -3/-2;
+    align-self: center;
+    padding: 7px;
+    background-color: blue;
+    color: rgb(212, 212, 212);
+    border: none;
+    transition: 0.3s;
+    font-family: cursive;
+    border-radius: 5px;
+}
+#stastButton:hover{
+    background-color: rgb(212, 212, 212);
+    color: blue;
+}
+#centerText{
+    width: 15%;
+    position: absolute;
+    text-align: center;
+    font-family: fantasy;
+    top: 40%;
+    right: 42.5%;
+    background: linear-gradient(to right , #e1e1e1 50%, #323232 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+}
